@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00ACC1</color>
+    <color name="colorPrimaryDark">#00838F</color>
+    <color name="colorAccent">#4DB6AC</color>
+    <color name="btn_color_login">#7B1FA2</color>
+    <color name="btn_color_signup">#7B1FA2</color>
+    <color name="background">#F5F5F5</color>
+    <color name="textcolor">#9E9E9E</color>
+    <color name="btn_num_true">#4FC3F7</color>
+    <color name="btn_num_false">#0277BD</color>
+    <color name="btn_operator_false">#4FC3F7</color>
+    <color name="btn_opertor_true">#0288D1</color>
+    <color name="NO">#e53935</color>
+    <color name="YES">#43A047</color>
+    <color name="text_color">#000</color>
+</resources>

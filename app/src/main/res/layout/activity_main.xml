@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/txtv_get"
+        android:text="0"
+        android:textSize="64sp"
+        android:textColor="@color/colorAccent" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_num_one"
+            android:text="1"
+            android:background="@drawable/select_btn_number"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_num_two"
+            android:text="2"
+            android:background="@drawable/select_btn_number"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_num_tree"
+            android:text="3"
+            android:background="@drawable/select_btn_number"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:background="@drawable/select_btn_operator"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_operator_pelus"
+            android:text="+"
+            android:textColor="#FFF"/>
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_num_four"
+            android:text="4"
+            android:background="@drawable/select_btn_number"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_num_five"
+            android:text="5"
+            android:background="@drawable/select_btn_number"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_num_six"
+            android:text="6"
+            android:background="@drawable/select_btn_number"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_operator_mines"
+            android:text="-"
+            android:background="@drawable/select_btn_operator"
+            android:textColor="#FFF"/>
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_num_seven"
+            android:text="7"
+            android:background="@drawable/select_btn_number"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_num_eight"
+            android:text="8"
+            android:background="@drawable/select_btn_number"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_num_nine"
+            android:text="9"
+            android:background="@drawable/select_btn_number"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_operator_Multiplication"
+            android:text="*"
+            android:background="@drawable/select_btn_operator"
+            android:textColor="#FFF"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_margin="4dp"
+            android:id="@+id/btn_Clear"
+            android:onClick="on_clear"
+            android:text="CLEAR"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/select_btn_operator"
+            android:textColor="#FFF"
+            tools:ignore="OnClick" />
+        <Button
+            android:layout_margin="4dp"
+            android:id="@+id/btn_num_0"
+            android:text="0"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/select_btn_number"
+            android:textColor="#FFF"/>
+        <Button
+            android:layout_margin="4dp"
+            android:id="@+id/btn_operator_equal"
+            android:text="="
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/select_btn_operator"
+            android:textColor="#FFF"/>
+        <Button
+            android:layout_margin="4dp"
+            android:id="@+id/btn_operator_Division"
+            android:text="/"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/select_btn_operator"
+            android:textColor="#FFF"/>
+    </TableRow>
+
+
+
+    <SeekBar
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbar"
+        android:max="100"
+        android:progressDrawable="@drawable/shape_seekbar"
+        android:thumb="@drawable/thumb_seekbar"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOLD"
+            android:id="@+id/bold_rb"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ITALIC"
+            android:id="@+id/t_rb"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PACIFICO"
+            android:id="@+id/pacifico_rb"/>
+    </RadioGroup>
+
+
+
+
+</LinearLayout>
